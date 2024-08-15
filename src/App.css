@@ -5,3 +5,10 @@
 .chatWindow::-webkit-scrollbar{
   display: none;
 }
+
+.main{
+  overflow-y: scroll;
+}
+.main::-webkit-scrollbar{
+  display: none;
+}

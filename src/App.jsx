@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
+import './App.css'
 
 function App() {
   const [userInput, setUserInput] = useState("");
@@ -121,9 +122,9 @@ function App() {
         </div>
       </div> */}
 
-      <div className="w-screen h-screen flex justify-center items-center">
-        <div className="w-[400px] h-[600px] md:w-full md:h-full bg-white rounded-lg shadow-md">
-          <div className="flex justify-between items-center p-4 border-b bg-orange-300">
+      <div className="flex justify-center items-center">
+        <div className="w-[400px] h-[550px] md:w-full md:h-full bg-white rounded-lg shadow-md">
+          <div className="flex justify-between items-center p-4 border-b bg-cyan-500">
             <div className="flex items-center">
               <img
                 src="https://picsum.photos/200/300"
@@ -136,7 +137,7 @@ function App() {
           </div>
           <div className="">
             <ul
-              className="chatWindow bg-gradient-to-br from-orange-200 via-white to-green-200 p-2 h-[400px] md:h-[540px] overflow-y-scroll"
+              className="chatWindow h-[400px] md:h-[530px] overflow-y-scroll bg-gradient-to-br from-cyan-100 via-white to-indigo-200 p-2"
             >
               {listOfMessages.map((msg) => (
                 <div key={msg.id}>
@@ -173,7 +174,7 @@ function App() {
               ))}
             </ul>
           </div>
-          <div className="p-4 flex justify-between bg-green-300">
+          <div className="p-5 flex justify-between bg-indigo-500">
             <input
               type="text"
               placeholder="Type a message..."
